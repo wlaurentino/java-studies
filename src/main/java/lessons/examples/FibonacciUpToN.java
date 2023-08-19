@@ -37,7 +37,6 @@ public class FibonacciUpToN {
             a = b;
             b = nextFibonacci;
         }
-
     }
 
 }
