@@ -29,5 +29,5 @@ public class NumberGuessingGame {
             System.out.println("Not yet, the number is higher.");
         }
     }
-}
+    }
 }
