@@ -11,7 +11,7 @@ public class Arrays {
         }
 
 //      the "for" below just goes through each element of the array in order before each version of the loop
-//      this one avois the possibility of running into an array index out of bounds excepts if you code it wrong
+//      this one avoids the possibility of running into an array index out of bounds excepts if you code is wrong
         for (String car : cars){
             System.out.println(car);
         }

@@ -2,11 +2,27 @@ package lessons.examples;
 
 public class Dog {
 
-    String name;
-    int age;
-    String breed;
-    String color;
+    private String name;
+    private int age;
+    private String breed;
+    private String color;
     int numberOfLegs;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Dog (){
         this.numberOfLegs = 4;
@@ -16,7 +32,7 @@ public class Dog {
         this.numberOfLegs = numberOfLegs;
     }
 
-    void bark() {
+    public void bark() {
         System.out.printf("\nBark! My name is: " + name);
     }
 
