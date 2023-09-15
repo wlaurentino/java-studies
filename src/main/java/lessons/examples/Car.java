@@ -1,6 +1,6 @@
 package lessons.examples;
 
-public class Car {
+public class Car implements MakeNoise {
 
     String name;
     String brand;
@@ -10,5 +10,10 @@ public class Car {
     public void start() {
 
         System.out.println("Start!");
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("BIP BIP VROM VROM interface noise");
     }
 }

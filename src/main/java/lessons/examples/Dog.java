@@ -1,6 +1,6 @@
 package lessons.examples;
 
-public class Dog {
+public class Dog implements MakeNoise {
 
     private String name;
     private int age;
@@ -36,4 +36,8 @@ public class Dog {
         System.out.printf("\nBark! My name is: " + name);
     }
 
+    @Override
+    public void makeNoise() {
+        System.out.println("AU AU interface Noise");
+    }
 }
