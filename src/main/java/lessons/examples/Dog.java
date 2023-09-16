@@ -36,6 +36,10 @@ public class Dog implements MakeNoise {
         System.out.printf("\nBark! My name is: " + name);
     }
 
+    public String toString(){
+       return "This is a " + this.age + " years old dog named " + this.name;
+    }
+
     @Override
     public void makeNoise() {
         System.out.println("AU AU interface Noise");
