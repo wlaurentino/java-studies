@@ -1,5 +1,7 @@
 package lessons.examples;
 
+import java.util.Objects;
+
 public class Dog implements MakeNoise {
 
     private String name;
@@ -7,6 +9,23 @@ public class Dog implements MakeNoise {
     private String breed;
     private String color;
     int numberOfLegs;
+
+    public boolean equals(Object obj){
+        if (this == obj){
+            return true;
+        }
+        if (obj == null){
+            return false;
+        }
+        if (this.getClass() != obj.getClass()){
+            return false;
+        }
+
+        Dog other = (Dog)obj;
+
+        return Objects.equals(this.getName(), other.getName()) && Objects.equals(this.getAge(), other.getAge());
+
+    }
 
     public int getAge() {
         return age;
