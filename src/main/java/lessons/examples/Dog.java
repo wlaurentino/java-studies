@@ -4,11 +4,12 @@ import java.util.Objects;
 
 public class Dog implements MakeNoise {
 
-    private String name;
-    private int age;
+    String name;
+    int age;
     private String breed;
     private String color;
     int numberOfLegs;
+
 
     public boolean equals(Object obj){
         if (this == obj){

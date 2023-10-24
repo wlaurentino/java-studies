@@ -1,7 +1,25 @@
 package lessons.animals;
 
 public class Cat extends Animal{
+
+
+
     private String litterPreference;
+
+    public Cat(String name, int age) {
+        super();
+        setName(name);
+        setAge(age);
+    }
+
+    public Cat() {
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getAge();
+    }
+
 
     public String getLitterPreference() {
         return litterPreference;
@@ -12,7 +30,7 @@ public class Cat extends Animal{
     }
 
     public void meow(){
-        System.out.println("MIAU !!");
+        System.out.println("MIAU !! My name is: " + getName());
     }
 
     @Override
